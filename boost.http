@@ -1,0 +1,9 @@
+@host = http://localhost:8004
+
+###
+
+GET {{host}}/health
+
+###
+
+GET {{host}}/v1/models
