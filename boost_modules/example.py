@@ -1,4 +1,4 @@
 ID_PREFIX = 'example'
 
-def apply(chat, llm):
-  llm.emit_message('Hello, boost!')
+async def apply(chat, llm):
+  await llm.emit_message('Hello, boost!')

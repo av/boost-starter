@@ -1,9 +1,35 @@
 @host = http://localhost:8004
 
-###
+### Service is up and running
 
 GET {{host}}/health
 
-###
+### Boost serves modules
 
 GET {{host}}/v1/models
+
+### Sample completion
+
+POST {{host}}/v1/chat/completions
+{
+  "model": "klmbr-llama3.1:latest",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Suggest me a random color"
+    }
+  ]
+}
+
+### Sample with a custom module
+
+POST {{host}}/v1/chat/completions
+{
+  "model": "example-llama3.1:latest",
+  "messages": [
+    {
+      "role": "user",
+      "content": "Suggest me a random color"
+    }
+  ]
+}
