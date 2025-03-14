@@ -1,6 +1,6 @@
 # boost-starter
 
-This is a minimal example of getting started with standalone installation of Harbor Boost with custom modules.
+This is a minimal example of getting started with standalone installation of [Harbor Boost](https://github.com/av/harbor/wiki/5.2.-Harbor-Boost) with [custom modules](https://github.com/av/harbor/wiki/5.2.-Harbor-Boost-Custom-Modules).
 
 ## Getting started
 
