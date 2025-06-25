@@ -29,7 +29,7 @@ POST {{host}}/v1/chat/completions
   "messages": [
     {
       "role": "user",
-      "content": "Suggest me a random color"
+      "content": "Does not really matter here"
     }
   ]
 }
