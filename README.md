@@ -56,6 +56,24 @@ docker run \
   ghcr.io/av/harbor-boost:latest
 ```
 
+# `nbs`
+
+`nbs` (Narrative Beam Search)
+
+Implements a variation of beam search where model generates multiple possible continuations based on a given set of system prompts and then selects the best one.
+
+![nbs](./assets/nbs.png)
+
+```bash
+docker run \
+  -e "HARBOR_BOOST_OPENAI_URLS=http://172.17.0.1:11434/v1" \
+  -e "HARBOR_BOOST_OPENAI_KEYS=sk-ollama" \
+  -e "HARBOR_BOOST_PUBLIC_URL=http://localhost:8004" \
+  -e "HARBOR_BOOST_MODULES=nbs" \
+  -p 8004:8000 \
+  ghcr.io/av/harbor-boost:latest
+```
+
 # `ponder`
 
 `ponder` is similar to the `concept` module above, but with a different approach to building of the concept graph.
